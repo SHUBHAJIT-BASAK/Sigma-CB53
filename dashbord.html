@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Donation Dashboard</title>
+  <link rel="stylesheet" href="dashbord.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Food Donation Dashboard</h1>
+    <!-- Navigation Links -->
+    <nav>
+      <ul>
+        <li><a href="#donate">Donate Food</a></li>
+        <li><a href="#manage">Manage Donations</a></li>
+        <li><a href="#waste">Food Waste</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Donation Section -->
+  <section id="donate">
+    <h2>Donate Food</h2>
+    <!-- Donation Form -->
+    <form id="donation-form">
+      <label for="foodName">Food Item:</label>
+      <input type="text" id="foodName" name="foodName" required>
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" required>
+
+      <button type="submit">Donate Now</button>
+    </form>
+  </section>
+
+  <!-- Manage Donations Section -->
+  <section id="manage">
+    <h2>Manage Donations</h2>
+    <!-- Display Donations Table -->
+    <div id="donation-table"></div>
+  </section>
+
+  <!-- Food Waste Section -->
+  <section id="waste">
+    <h2>Food Waste</h2>
+    <!-- Display Food Waste Information -->
+    <div id="waste-info"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Food Donation Dashboard</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
